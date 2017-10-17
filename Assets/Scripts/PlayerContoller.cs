@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿	using System.Collections;
+	using System.Collections.Generic;
+	using UnityEngine;
+	using UnityEngine.UI;
 
-public class PlayerContoller : MonoBehaviour {
+	public class PlayerContoller : MonoBehaviour {
 
 	private Rigidbody2D rgb2d;
 	private Animator animator;
@@ -26,17 +26,15 @@ public class PlayerContoller : MonoBehaviour {
 	void Update(){
 		slider.value = energy;
 		energyText.text = energy.ToString ();
+
+
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
 		
-		float inputValue = Input.GetAxis ("Horizontal");
+		changeAnimation ();
 
-		if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Idle")) {
-			animator.SetTrigger ("Walk");
-		} else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Walk")) {
-			animator.SetTrigger ("Idle");
-		}
+		float inputValue = Input.GetAxis ("Horizontal");
 
 		Vector2 speed = new Vector2 (0, rgb2d.velocity.y);
 
@@ -64,7 +62,11 @@ public class PlayerContoller : MonoBehaviour {
 		var s = transform.localScale;
 		s.x *= -1;
 		transform.localScale = s;
-
-
 	}
+	void changeAnimation(){
+		if (Input.GetKeyDown ("left") || Input.GetKeyDown ("right")) {
+			animator.SetTrigger ("Walk");
+		}
+	}
+
 }

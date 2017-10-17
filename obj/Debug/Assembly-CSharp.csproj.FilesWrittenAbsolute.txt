@@ -22,3 +22,6 @@
 /Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/fenix/Developer/Unity/first/Ninjas War/Temp/bin/Debug/ICSharpCode.NRefactory.dll
