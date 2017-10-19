@@ -31,12 +31,12 @@ public class ChestController : MonoBehaviour {
 		return chestAvailable;
 	}
 
-
+	/*
 	void OnTriggerEnter2D(Collider2D other) {
 		Debug.Log ("Before Collision :D");
 		if(other.tag == "rogue"){
 			Debug.Log ("Collision :D");
 			Destroy(other.gameObject);
 		}
-	}
+	}*/
 }

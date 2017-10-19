@@ -15,8 +15,11 @@
 
 	public float energy;
 
+	ChestController chestController;
+
 	// Use this for initialization
 	void Start () {
+		chestController = null;
 		moveRigth = true;
 		energy = 100;
 		rgb2d = GetComponent<Rigidbody2D> ();
@@ -27,6 +30,13 @@
 		slider.value = energy;
 		energyText.text = energy.ToString ();
 
+		//if (Input.GetButton ("Fire1")) {
+		Debug.Log ("update :O");
+			if(chestController != null){
+				Debug.Log ("SetController :O");	
+				chestController.IsChestAvailable ();
+			}
+		//}
 
 	}
 	// Update is called once per frame
@@ -67,6 +77,11 @@
 		if (Input.GetKeyDown ("left") || Input.GetKeyDown ("right")) {
 			animator.SetTrigger ("Walk");
 		}
+	}
+
+	public void SetControllerCheast (ChestController chest){
+		
+		chestController = chest;
 	}
 
 }

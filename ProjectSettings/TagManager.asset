@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - cheast
   - rogue
+  - chest
   layers:
   - Default
   - TransparentFX
@@ -16,7 +16,7 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
+  - Game
   - 
   - 
   - 
