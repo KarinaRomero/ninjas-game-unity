@@ -21,7 +21,7 @@
 	void Start () {
 		chestController = null;
 		moveRigth = true;
-		energy = 100;
+		energy = 0;
 		rgb2d = GetComponent<Rigidbody2D> ();
 		animator = GetComponent <Animator> ();
 	}
@@ -29,20 +29,20 @@
 	void Update(){
 		slider.value = energy;
 		energyText.text = energy.ToString ();
-
-		//if (Input.GetButton ("Fire1")) {
-		Debug.Log ("update :O");
 			if(chestController != null){
-				Debug.Log ("SetController :O");	
-				chestController.IsChestAvailable ();
+				
+			chestController.IsChestAvailable ();
+			if(energy>=0 && energy<100){
+				energy += 10;
 			}
-		//}
+			chestController = null;
+			}
 
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
 		
-		changeAnimation ();
+		//changeAnimation ();
 
 		float inputValue = Input.GetAxis ("Horizontal");
 
@@ -73,14 +73,19 @@
 		s.x *= -1;
 		transform.localScale = s;
 	}
-	void changeAnimation(){
+	public void changeAnimation(){
+		
 		if (Input.GetKeyDown ("left") || Input.GetKeyDown ("right")) {
+			
 			animator.SetTrigger ("Walk");
-		}
+		} 
+		if (Input.GetKeyDown ("a")) {
+			
+			animator.SetTrigger ("Attack");
+		} 
 	}
 
-	public void SetControllerCheast (ChestController chest){
-		
+	public void SetControllerChest (ChestController chest){
 		chestController = chest;
 	}
 

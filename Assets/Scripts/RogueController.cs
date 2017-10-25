@@ -13,14 +13,13 @@ public class RogueController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		playerController.changeAnimation ();
 	}
 
+
+
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log (other.gameObject.name);
-		Debug.Log (playerController.gameObject.name);
-		if(other.gameObject.name == "cheast"){
-			playerController.SetControllerCheast (other.gameObject.GetComponent<ChestController>());
-		}
+		
+			playerController.SetControllerChest (other.gameObject.GetComponent<ChestController>());
 	} 
 }

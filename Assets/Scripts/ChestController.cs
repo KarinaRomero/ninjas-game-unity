@@ -9,7 +9,7 @@ public class ChestController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		chestLife = 2;
+		chestLife = 1;
 		animator = GetComponent<Animator> ();
 	}
 	
@@ -22,9 +22,10 @@ public class ChestController : MonoBehaviour {
 		bool chestAvailable = true;
 
 		chestLife--;
-		animator.SetTrigger ("Disapear");
+		//
 
 		if(chestLife <= 0 ){
+			animator.SetTrigger ("Disappear");
 			chestAvailable = false;
 		}
 
