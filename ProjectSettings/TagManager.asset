@@ -6,6 +6,7 @@ TagManager:
   tags:
   - rogue
   - chest
+  - attack
   layers:
   - Default
   - TransparentFX

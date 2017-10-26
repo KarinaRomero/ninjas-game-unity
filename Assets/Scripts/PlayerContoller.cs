@@ -41,8 +41,6 @@
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
-		
-		//changeAnimation ();
 
 		float inputValue = Input.GetAxis ("Horizontal");
 
@@ -54,7 +52,7 @@
 
 		rgb2d.velocity = speed;
 
-		animator.SetFloat ("speed", speed.x);
+		animator.SetFloat ("Walking", speed.x);
 
 		if (moveRigth && inputValue < 0) {
 			moveRigth = false;
