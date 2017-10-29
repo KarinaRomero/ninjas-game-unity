@@ -13,8 +13,10 @@ public class AttackController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		speed = 6;
-		lifeTime = 2;
+		lifeTime = 9;
+		direction = new Vector3 (-1,0,0);
 		Destroy (gameObject, lifeTime);
 		rigidBody = GetComponent<Rigidbody2D>();
 		stepVector = speed * direction.normalized;
