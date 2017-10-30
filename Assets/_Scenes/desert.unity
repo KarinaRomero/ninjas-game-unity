@@ -2102,6 +2102,10 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011891322588, guid: 4a6e9a7d544412d4d92db88d8587228e, type: 2}
+      propertyPath: m_TagString
+      value: rogue
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a6e9a7d544412d4d92db88d8587228e, type: 2}
   m_IsPrefabParent: 0
@@ -2698,6 +2702,7 @@ MonoBehaviour:
   slider: {fileID: 1040791764}
   energyText: {fileID: 908559265}
   energy: 100
+  shield: {fileID: 1663752783403252, guid: 1a08cb17b5fe24af7b9110c916e1f87c, type: 2}
 --- !u!1 &1905038163
 GameObject:
   m_ObjectHideFlags: 0

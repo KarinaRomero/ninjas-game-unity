@@ -17,16 +17,27 @@
 
 	ChestController chestController;
 
+	public GameObject shield;
+	private GameObject newShield;
+	public Transform ShieldSpawn;
+
 	// Use this for initialization
 	void Start () {
 		chestController = null;
 		moveRigth = true;
-		energy = 0;
+		energy = 20;
 		rgb2d = GetComponent<Rigidbody2D> ();
 		animator = GetComponent <Animator> ();
+
+
 	}
 
 	void Update(){
+
+		/*if (Input.GetButton ("Fire1") && newShield == null) {
+			Vector3 positionShield = new Vector3 (gameObject.transform.position.x+1,gameObject.transform, gameObject.transform);
+			newShield = Instantiate (shield, positionShield, Transform.rotation) as GameObject;
+		} */
 		slider.value = energy;
 		energyText.text = energy.ToString ();
 			if(chestController != null){
@@ -37,6 +48,7 @@
 			}
 			chestController = null;
 			}
+
 
 	}
 	// Update is called once per frame
@@ -86,5 +98,6 @@
 	public void SetControllerChest (ChestController chest){
 		chestController = chest;
 	}
+
 
 }

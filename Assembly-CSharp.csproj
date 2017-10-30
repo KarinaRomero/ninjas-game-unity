@@ -46,11 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AttackController.cs" />
+     <Compile Include="Assets\Scripts\AttackController.cs" />
      <Compile Include="Assets\Scripts\ChestController.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\PlayerContoller.cs" />
      <Compile Include="Assets\Scripts\RogueController.cs" />
+     <Compile Include="Assets\Scripts\ShieldController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
