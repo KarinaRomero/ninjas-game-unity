@@ -35,11 +35,11 @@
 	void Update(){
 
 		if (Input.GetButton ("Fire1") && newShield == null) {
-			Debug.Log (transform.position.ToString());
-			Debug.Log (gameObject.transform.position.x.ToString());
+			
 			Vector3 positionShield = new Vector3 (transform.position.x+2, transform.position.y+1, transform.position.z);
 			newShield = Instantiate (shield, positionShield, transform.rotation) as GameObject;
 		} 
+
 		slider.value = energy;
 		energyText.text = energy.ToString ();
 			if(chestController != null){
@@ -56,28 +56,29 @@
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		float inputValue = Input.GetAxis ("Horizontal");
+		if (newShield == null) {
+			float inputValue = Input.GetAxis ("Horizontal");
 
-		Vector2 speed = new Vector2 (0, rgb2d.velocity.y);
+			Vector2 speed = new Vector2 (0, rgb2d.velocity.y);
 
-		inputValue *= speedValue;
+			inputValue *= speedValue;
 
-		speed.x = inputValue;
+			speed.x = inputValue;
 
-		rgb2d.velocity = speed;
+			rgb2d.velocity = speed;
 
-		animator.SetFloat ("Walking", speed.x);
+			animator.SetFloat ("Walking", speed.x);
 
-		if (moveRigth && inputValue < 0) {
-			moveRigth = false;
-			 
-			Flip ();
-		} else if (!moveRigth && inputValue > 0) {
-			moveRigth = true;
-			Flip ();
-		} 
+			if (moveRigth && inputValue < 0) {
+				moveRigth = false;
 
+				Flip ();
+			} else if (!moveRigth && inputValue > 0) {
+				moveRigth = true;
+				Flip ();
+			} 
 
+		}
 	}
 
 	void Flip(){
