@@ -34,10 +34,12 @@
 
 	void Update(){
 
-		/*if (Input.GetButton ("Fire1") && newShield == null) {
-			Vector3 positionShield = new Vector3 (gameObject.transform.position.x+1,gameObject.transform, gameObject.transform);
-			newShield = Instantiate (shield, positionShield, Transform.rotation) as GameObject;
-		} */
+		if (Input.GetButton ("Fire1") && newShield == null) {
+			Debug.Log (transform.position.ToString());
+			Debug.Log (gameObject.transform.position.x.ToString());
+			Vector3 positionShield = new Vector3 (transform.position.x+2, transform.position.y+1, transform.position.z);
+			newShield = Instantiate (shield, positionShield, transform.rotation) as GameObject;
+		} 
 		slider.value = energy;
 		energyText.text = energy.ToString ();
 			if(chestController != null){
