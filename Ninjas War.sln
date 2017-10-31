@@ -1,7 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninjas War", "Assembly-CSharp.csproj", "{F2ACDF7F-F991-8E0B-110C-765F95A3AC7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F2ACDF7F-F991-8E0B-110C-765F95A3AC7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{1F3F207E-6C99-6331-6810-2E18F0E877AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{F2ACDF7F-F991-8E0B-110C-765F95A3AC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2ACDF7F-F991-8E0B-110C-765F95A3AC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2ACDF7F-F991-8E0B-110C-765F95A3AC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3F207E-6C99-6331-6810-2E18F0E877AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3F207E-6C99-6331-6810-2E18F0E877AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3F207E-6C99-6331-6810-2E18F0E877AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3F207E-6C99-6331-6810-2E18F0E877AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
