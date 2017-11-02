@@ -3,51 +3,94 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyController : MonoBehaviour {
+public class EnemyController : MonoBehaviour
+{
+    public float speed;
+    private Rigidbody2D rgb2d;
+    private Animator animator;
 
-	public float speed;
-	private Rigidbody2D rgb2d;
-	private Animator animator;
+    public Slider slider;
+    public Text energyText;
 
-	public Slider slider;
-	public Text energyText;
+    private GameObject newAttack;
+    public GameObject attack;
 
-	public float energy;
+    public float energy;
+    private bool right;
 
-	// Use this for initialization
-	void Start () {
-		speed = -1f;
-		energy = 100;
-		rgb2d = GetComponent <Rigidbody2D>();
-		animator = GetComponent <Animator> ();
-	}
+    public float nextFire = 20;
+    //public AudioSource audio;
 
-	void Update(){
-		slider.value = energy;
-		energyText.text = energy.ToString ();
-	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
-		Vector2 vector = new Vector2 (speed,0);
-		rgb2d.velocity = vector;
+    public float myTime;
+    public float fireDelta = 0.5F;
 
-		if(animator.GetCurrentAnimatorStateInfo(0).IsName("walk") && Random.value < 1f/(60f*3f)) {
-			animator.SetTrigger ("jump");
-		}
-	}
+    // Use this for initialization
+    void Start()
+    {
+        right = true;
+        speed = -1f;
+        energy = 100;
+        rgb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
-	void OnTriggerEnter2D (Collider2D other){
-		Flip ();
-	}
+    void Update()
+    {
+        slider.value = energy;
+        energyText.text = energy.ToString();
+        myTime = myTime + Time.deltaTime;
 
-	void Flip(){
-		speed *= -1;
+        /* if (newAttack == null && myTime > nextFire)
+         {
+             nextFire = myTime + fireDelta;
+             
+             Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y + 1, -1);
+           
+             newAttack = Instantiate(attack, positionShield, transform.rotation);
+ 
+             animator.SetTrigger("jump");
+             nextFire = nextFire - myTime;
+             myTime = 0.0F;
+             newAttack = null;
+         }*/
+    }
 
-		var s = transform.localScale;
-		s.x *= -1;
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Vector2 vector = new Vector2(speed, 0);
+        rgb2d.velocity = vector;
 
-		transform.localScale = s;
-	}
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk") && Random.value < 1f / (60f * 3f))
+        {
+            animator.SetTrigger("jump");
+            Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y + 1, -1);
+
+            newAttack = Instantiate(attack, positionShield, transform.rotation);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Flip();
+    }
+
+    void Flip()
+    {
+        speed *= -1;
+
+        var s = transform.localScale;
+        s.x *= -1;
+
+        transform.localScale = s;
+        if (!right)
+        {
+            right = true;
+        }
+        else
+        {
+            right = false;
+        }
+    }
 }
-

@@ -1,106 +1,114 @@
-﻿	using System.Collections;
-	using System.Collections.Generic;
-	using UnityEngine;
-	using UnityEngine.UI;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
-	public class PlayerContoller : MonoBehaviour {
+public class PlayerContoller : MonoBehaviour
+{
+    private Rigidbody2D rgb2d;
+    private Animator animator;
+    public float speedValue;
+    private bool moveRigth;
 
-	private Rigidbody2D rgb2d;
-	private Animator animator;
-	public float speedValue;
-	private bool moveRigth;
+    public Slider slider;
+    public Text energyText;
 
-	public Slider slider;
-	public Text energyText;
+    public float energy;
 
-	public float energy;
+    public bool gameOver;
+    public Text gameOverText;
 
-	ChestController chestController;
+    ChestController chestController;
 
-	public GameObject shield;
-	private GameObject newShield;
-	public Transform ShieldSpawn;
+    public GameObject shield;
+    private GameObject newShield;
+    public Transform ShieldSpawn;
 
-	// Use this for initialization
-	void Start () {
-		chestController = null;
-		moveRigth = true;
-		energy = 20;
-		rgb2d = GetComponent<Rigidbody2D> ();
-		animator = GetComponent <Animator> ();
+    // Use this for initialization
+    void Start()
+    {
+        gameOverText.text = "";
+        gameOver = false;
+        chestController = null;
+        moveRigth = true;
+        energy = 0;
+        rgb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
+    void Update()
+    {
+        if (gameOver)
+        {
+            gameOverText.text = "GAME OVER! :C";
 
-	}
+            Destroy(gameObject);
+        }
+        else
+        {
+            if (Input.GetButton("Fire1") && newShield == null)
+            {
+                Vector3 positionShield =
+                    new Vector3(transform.position.x + 2, transform.position.y + 1, transform.position.z);
+                newShield = Instantiate(shield, positionShield, transform.rotation) as GameObject;
+            }
 
-	void Update(){
+            slider.value = energy;
+            energyText.text = energy.ToString();
+            if (chestController != null)
+            {
+                energy += 10;
+            }
+            chestController = null;
+        }
+    }
 
-		if (Input.GetButton ("Fire1") && newShield == null) {
-			
-			Vector3 positionShield = new Vector3 (transform.position.x+2, transform.position.y+1, transform.position.z);
-			newShield = Instantiate (shield, positionShield, transform.rotation) as GameObject;
-		} 
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (newShield == null && !gameOver)
+        {
+            float inputValue = Input.GetAxis("Horizontal");
 
-		slider.value = energy;
-		energyText.text = energy.ToString ();
-			if(chestController != null){
-				
-			chestController.IsChestAvailable ();
-			if(energy>=0 && energy<100){
-				energy += 10;
-			}
-			chestController = null;
-			}
+            Vector2 speed = new Vector2(0, rgb2d.velocity.y);
 
+            inputValue *= speedValue;
 
-	}
-	// Update is called once per frame
-	void FixedUpdate () {
+            speed.x = inputValue;
 
-		if (newShield == null) {
-			float inputValue = Input.GetAxis ("Horizontal");
+            rgb2d.velocity = speed;
 
-			Vector2 speed = new Vector2 (0, rgb2d.velocity.y);
+            animator.SetFloat("Walking", speed.x);
 
-			inputValue *= speedValue;
+            if (moveRigth && inputValue < 0)
+            {
+                moveRigth = false;
 
-			speed.x = inputValue;
+                Flip();
+            }
+            else if (!moveRigth && inputValue > 0)
+            {
+                moveRigth = true;
+                Flip();
+            }
+        }
+    }
 
-			rgb2d.velocity = speed;
+    void Flip()
+    {
+        var s = transform.localScale;
+        s.x *= -1;
+        transform.localScale = s;
+    }
 
-			animator.SetFloat ("Walking", speed.x);
+    public void SetControllerChest(ChestController chest)
+    {
+        chestController = chest;
+    }
 
-			if (moveRigth && inputValue < 0) {
-				moveRigth = false;
-
-				Flip ();
-			} else if (!moveRigth && inputValue > 0) {
-				moveRigth = true;
-				Flip ();
-			} 
-
-		}
-	}
-
-	void Flip(){
-		var s = transform.localScale;
-		s.x *= -1;
-		transform.localScale = s;
-	}
-	public void changeAnimation(){
-		
-		if (Input.GetKeyDown ("left") || Input.GetKeyDown ("right")) {
-			
-			animator.SetTrigger ("Walk");
-		} 
-		if (Input.GetKeyDown ("a")) {
-			
-			animator.SetTrigger ("Attack");
-		} 
-	}
-
-	public void SetControllerChest (ChestController chest){
-		chestController = chest;
-	}
-
-
+    public void kill()
+    {
+        animator.SetTrigger("Kill");
+        gameOver = true;
+    }
 }

@@ -7,7 +7,7 @@ public class ShieldController : MonoBehaviour {
 	public float lifeTime;
 	// Use this for initialization
 	void Start () {
-		lifeTime = 2;
+		lifeTime = 1;
 		Destroy (gameObject, lifeTime);
 	}
 	
