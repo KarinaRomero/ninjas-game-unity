@@ -2,6 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72bca13-42a0-428e-9f98-afb0acf3d8c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/353544__maxmakessounds__egyptian-theme.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/363172__runningmind__pickups-shield-belt.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alarm_Loop_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alarm_Loop_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alien_Language_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_AlienHive_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_AlienPlanet_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_BlackHole_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_Space_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Achievement_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Lose_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Win_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Win_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_02.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_03.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_04.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_05.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_06.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_07.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_08.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_09.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Menu_Select_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Menu_Select_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Activated_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_02.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Large_Loop_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Medium_Loop_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Small_Loop_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_00.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_01.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_02.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alarm_Loop_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alarm_Loop_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alien_Language_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_AlienHive_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_AlienPlanet_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_BlackHole_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_Space_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Achievement_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Lose_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Win_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Win_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_02.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_03.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_04.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_05.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_06.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_07.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_08.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_09.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Menu_Select_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Menu_Select_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Activated_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_02.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Large_Loop_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Medium_Loop_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Small_Loop_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_00.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_02.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/RetroalimentacionEnergia.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/RetroalimentacionEnergia.prefab.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/UnityAnaliticsIntegration.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/UnityAnaliticsIntegration.cs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/353544__maxmakessounds__egyptian-theme.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/363172__runningmind__pickups-shield-belt.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alarm_Loop_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alarm_Loop_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Alien_Language_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_AlienHive_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_AlienPlanet_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_BlackHole_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Ambience_Space_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Achievement_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Lose_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Win_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Jingle_Win_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_02.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_03.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_04.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_05.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_06.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_07.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_08.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Laser/Laser_09.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Menu_Select_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Menu_Select_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Activated_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/Robot_Talk_02.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Large_Loop_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Medium_Loop_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/SpaceShip_Engine_Small_Loop_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_00.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_01.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Mp3/WarpDrive_02.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alarm_Loop_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alarm_Loop_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Alien_Language_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_AlienHive_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_AlienPlanet_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_BlackHole_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Ambience_Space_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Achievement_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Lose_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Win_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Jingle_Win_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_02.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_03.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_04.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_05.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_06.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_07.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_08.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Laser/Laser_09.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Menu_Select_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Menu_Select_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Activated_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/Robot_Talk_02.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Large_Loop_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Medium_Loop_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/SpaceShip_Engine_Small_Loop_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_00.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_01.wav.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/music/Sci-Fi-Sfx/Wav/WarpDrive_02.wav.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
@@ -62,6 +208,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContoller.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContoller.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/desert.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/desert.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -133,8 +280,8 @@
       <file leaf-file-name="PlayerContoller.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerContoller.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="-107">
+              <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
               <folding>
                 <marker date="1510105310000" expanded="true" signature="6:103" ph="..." />
                 <marker date="1510105310000" expanded="true" signature="149:3488" ph="{...}" />
@@ -313,12 +460,12 @@
       <workItem from="1509426057066" duration="15238000" />
       <workItem from="1510015927052" duration="619000" />
       <workItem from="1510018315730" duration="6660000" />
-      <workItem from="1510100159714" duration="1045000" />
+      <workItem from="1510100159714" duration="1153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23562000" />
+    <option name="totallyTimeSpent" value="23670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -758,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerContoller.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="-107">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
           <folding>
             <marker date="1510105310000" expanded="true" signature="6:103" ph="..." />
             <marker date="1510105310000" expanded="true" signature="149:3488" ph="{...}" />
