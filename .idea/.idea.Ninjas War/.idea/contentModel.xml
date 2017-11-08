@@ -20,6 +20,7 @@
           <e p="RogueController.cs" t="Include" />
           <e p="ShieldController.cs" t="Include" />
         </e>
+        <e p="UnityAnaliticsIntegration.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="Ninjas War.sln" t="IncludeFlat" />

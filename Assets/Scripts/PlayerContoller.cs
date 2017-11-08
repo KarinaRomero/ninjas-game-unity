@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine.Analytics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,12 +10,17 @@ public class PlayerContoller : MonoBehaviour
     public float speedValue;
     private bool moveRigth;
 
+    public AudioClip shieldClip;
+    public AudioSource ShieldAudioSource;
+
     public Slider slider;
     public Text energyText;
+    public Text restartText;
 
     public float energy;
 
     public bool gameOver;
+    public bool restart;
     public Text gameOverText;
 
     ChestController chestController;
@@ -28,12 +33,15 @@ public class PlayerContoller : MonoBehaviour
     void Start()
     {
         gameOverText.text = "";
+        restartText.text = "";
         gameOver = false;
+        restart = false;
         chestController = null;
         moveRigth = true;
         energy = 0;
         rgb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        ShieldAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -41,13 +49,22 @@ public class PlayerContoller : MonoBehaviour
         if (gameOver)
         {
             gameOverText.text = "GAME OVER! :C";
-
-            Destroy(gameObject);
+            restartText.text = "Press R to try";
+            
+            animator.SetTrigger("Dead");
+            
+            restart = true;
+            
+            Analytics.CustomEvent("gameOver", new Dictionary<string, object>
+            {
+                { "energy", energy }
+            });
         }
-        else
+        if (!gameOver)
         {
             if (Input.GetButton("Fire1") && newShield == null)
             {
+                ShieldAudioSource.PlayOneShot(shieldClip);
                 Vector3 positionShield =
                     new Vector3(transform.position.x + 2, transform.position.y + 1, transform.position.z);
                 newShield = Instantiate(shield, positionShield, transform.rotation) as GameObject;
@@ -60,6 +77,13 @@ public class PlayerContoller : MonoBehaviour
                 energy += 10;
             }
             chestController = null;
+        }
+        if (restart)
+        {
+            if(Input.GetKeyDown(KeyCode.R)){
+                //Application.LoadLevel (Application.LoadLevel);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);   
+            }
         }
     }
 

@@ -1,43 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class ChestController : MonoBehaviour {
-	
-	public int chestLife;
-	Animator animator;
+public class ChestController : MonoBehaviour
+{
+    Animator animator;
+    public Text ChestText;
 
-	// Use this for initialization
-	void Start () {
-		chestLife = 1;
-		animator = GetComponent<Animator> ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Use this for initialization
+    void Start()
+    {
+        ChestText.text = " ";
+        animator = GetComponent<Animator>();
+    }
 
-	public bool IsChestAvailable(){
-		bool chestAvailable = true;
-
-		chestLife--;
-		//
-
-		if(chestLife <= 0 ){
-			animator.SetTrigger ("Disappear");
-			chestAvailable = false;
-		}
-
-		return chestAvailable;
-	}
-
-	/*
-	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("Before Collision :D");
-		if(other.tag == "rogue"){
-			Debug.Log ("Collision :D");
-			Destroy(other.gameObject);
-		}
-	}*/
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "rogue")
+        {
+            ChestText.text = "+10";
+            
+        }
+    }
 }

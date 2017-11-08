@@ -8,72 +8,78 @@ public class EnemyController : MonoBehaviour
     public float speed;
     private Rigidbody2D rgb2d;
     private Animator animator;
-
-    public Slider slider;
-    public Text energyText;
-
     private GameObject newAttack;
     public GameObject attack;
-
-    public float energy;
     private bool right;
 
-    public float nextFire = 20;
-    //public AudioSource audio;
+    public AudioClip AttackAudioClip;
+
+    public AudioSource AttackAudioSource;
+
+    private float currentTime;
+    PlayerContoller playerController;
 
 
-    public float myTime;
-    public float fireDelta = 0.5F;
+    //The time to spawn the object
+    private float spawnTime;
+
 
     // Use this for initialization
     void Start()
     {
+        currentTime = 0;
+        spawnTime = Random.Range(0, 1);
         right = true;
         speed = -1f;
-        energy = 100;
         rgb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        AttackAudioSource = GetComponent<AudioSource>();
+        playerController = GameObject.Find("Rogue_03").GetComponent<PlayerContoller>();
     }
 
     void Update()
     {
-        slider.value = energy;
-        energyText.text = energy.ToString();
-        myTime = myTime + Time.deltaTime;
+        //Counts up
+        currentTime += Time.deltaTime;
 
-        /* if (newAttack == null && myTime > nextFire)
-         {
-             nextFire = myTime + fireDelta;
-             
-             Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y + 1, -1);
-           
-             newAttack = Instantiate(attack, positionShield, transform.rotation);
- 
-             animator.SetTrigger("jump");
-             nextFire = nextFire - myTime;
-             myTime = 0.0F;
-             newAttack = null;
-         }*/
+
+        if (newAttack == null && currentTime >= spawnTime && right && !playerController.gameOver)
+        {
+            SpawnObject();
+            currentTime = 0;
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("jump"))
+        {
+            animator.SetTrigger("walk");
+        }
+        
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    //Spawns the object and resets the time
+    void SpawnObject()
     {
-        Vector2 vector = new Vector2(speed, 0);
-        rgb2d.velocity = vector;
-
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk") && Random.value < 1f / (60f * 3f))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk"))
         {
             animator.SetTrigger("jump");
             Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y + 1, -1);
 
             newAttack = Instantiate(attack, positionShield, transform.rotation);
+            AttackAudioSource.PlayOneShot(AttackAudioClip);
         }
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 vector = new Vector2(speed, 0);
+        rgb2d.velocity = vector;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Flip();
+        if (other.tag != "attack")
+        {
+            Flip();
+        }
     }
 
     void Flip()
