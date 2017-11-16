@@ -52,7 +52,6 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetTrigger("walk");
         }
-        
     }
 
     //Spawns the object and resets the time
@@ -60,11 +59,11 @@ public class EnemyController : MonoBehaviour
     {
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk"))
         {
-            animator.SetTrigger("jump");
-            Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y + 1, -1);
+            Vector3 positionShield = new Vector3(transform.position.x - 1, transform.position.y, -1);
 
             newAttack = Instantiate(attack, positionShield, transform.rotation);
             AttackAudioSource.PlayOneShot(AttackAudioClip);
+            animator.SetTrigger("jump");
         }
     }
 
